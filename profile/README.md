@@ -1,5 +1,3 @@
-<img src="../assets/selfie.png" align="right" alt="Selfie" />
-
 Applied Recognition is a key supplier of face recognition technology for time and attendance kiosks and KYC applications.
 
 # Ver&#8209;ID&nbsp;SDK
@@ -9,6 +7,8 @@ Applied Recognition's flagship product is the Ver-ID SDK for iOS and Android. Th
 To get started, check out one of the sample applications below.
 
 # Biometric sign-in
+
+<img src="../assets/selfie.png" align="right" alt="Selfie" />
 
 Capture a face and register it under a user’s name. Once registered, the user can sign in to the app using their face.
 
@@ -24,9 +24,9 @@ Uses the following Ver-ID libraries:
 - Face template registry: [iOS](https://github.com/AppliedRecognition/Face-Template-Registry-Apple), [Android](https://github.com/AppliedRecognition/Face-Template-Registry-Android)
 
 
-<img src="../assets/passport.png" align="right" alt="Passport" />
-
 # Identity verification/KYC
+
+<img src="../assets/passport.png" align="right" alt="Passport" />
 
 Compare a face from a machine-readable travel document to a selfie.
 
