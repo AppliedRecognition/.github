@@ -4,6 +4,9 @@ Applied Recognition is a key supplier of face recognition technology for time an
 
 Applied Recognition's flagship product is the Ver-ID SDK for iOS and Android. The SDK includes libraries for face detection, face recognition and spoof detection.
 
+- [Ver-ID SDK for iOS](./iOS-SDK.md)
+- [Ver-ID SDK for Android](./Android-SDK.md)
+
 To get started, check out one of the sample applications below.
 
 # Biometric sign-in
