@@ -7,9 +7,10 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | Library | Description | Repositories |
 | --- | --- | --- |
 | **Face capture** | Capture faces that can be used for face recognition | [Face capture](https://github.com/AppliedRecognition/Face-Capture-Apple) |
-| **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple)<br>[Face recognition Dlib (legacy)](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) |
+| **Face template registry** | Handles face registration, authentication and identification | [Face template registry](https://github.com/AppliedRecognition/Face-Template-Registry-Apple) |
+| **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple),<br> [Face recognition Dlib](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) (legacy) |
 | **Face detection** | Detect faces in images | [Face detection RetinaFace](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple) |
-| **Spoof detection** | Detect spoofs in images | [Spoof device detection](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple)<br>[FASnet spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fasnet-Apple)<br>[Fusion spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fusion-Apple) |
+| **Spoof detection** | Detect spoofs in images | [Spoof device detection](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple),<br> [FASnet spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fasnet-Apple),<br> [Fusion spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fusion-Apple) |
 | **Common types** | Facilitate library interoperability | [Common types](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple) |
 | **Serialization** | Serialize types using protocol buffers | [Serialization](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Apple) |
 

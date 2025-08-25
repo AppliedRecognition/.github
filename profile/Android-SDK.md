@@ -9,6 +9,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | [**Face detection**](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android) | Detect faces in images |
 | [**Spoof device detection**](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android) | Detect spoof devices in images |
 | [**Face recognition ArcFace**](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android) | Extract face templates from detected faces and compare them |
+| [**Face recognition Dlib** (legacy)](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Android) |Extract face templates from detected faces and compare them |
 | [**Passport reader**](https://github.com/AppliedRecognition/Passport-Reader-Android) | Read information and image from passport NFC chip |
 | [**Serialization**](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Android) | Serialize types using protocol buffers |
 | [**Common types**](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Android) | Facilitate library interoperability |
@@ -30,6 +31,8 @@ implementation("com.appliedrec:verid-face-capture")
 | **Face detection RetinaFace** | `com.appliedrec:face-detection-retinaface` |
 | **Spoof device detection*** | `com.appliedrec:spoof-device-detection-core`<br />`com.appliedrec:spoof-device-detection-cloud` |
 | **Face recognition ArcFace*** | `com.appliedrec:face-recognition-arcface-core`<br />`com.appliedrec:face-recognition-arcface-cloud` |
+| **Face recognition Dlib** (legacy) | `com.appliedrec:face-recognition-dlib` |
+| **Passport reader** | `com.appliedrec:mtrd-reader` |
 | **Serialization** | `com.appliedrec:verid-serialization` |
 | **Common types** | `com.appliedrec:verid-common` |
 | **BOM** (bill of materials) | `com.appliedrec:verid-bom` |
