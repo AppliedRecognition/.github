@@ -11,6 +11,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple),<br> [Face recognition Dlib](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) (legacy) |
 | **Face detection** | Detect faces in images | [Face detection RetinaFace](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple) |
 | **Spoof detection** | Detect spoofs in images | [Spoof device detection](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple),<br> [FASnet spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fasnet-Apple),<br> [Fusion spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fusion-Apple) |
+| **Ver-ID 2–3 migration** | Migrate face templates from Ver-ID 2.* to Ver-ID 3+ | [Ver-ID 2–3 migration](https://github.com/AppliedRecognition/Ver-ID-2-3-Migration-Apple) |
 | **Common types** | Facilitate library interoperability | [Common types](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple) |
 | **Serialization** | Serialize types using protocol buffers | [Serialization](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Apple) |
 
