@@ -11,6 +11,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | [**Face recognition ArcFace**](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android) | Extract face templates from detected faces and compare them |
 | [**Face recognition Dlib** (legacy)](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Android) |Extract face templates from detected faces and compare them |
 | [**Passport reader**](https://github.com/AppliedRecognition/Passport-Reader-Android) | Read information and image from passport NFC chip |
+| [**Ver-ID 2–3 migration**](https://github.com/AppliedRecognition/Ver-ID-2-3-Migration-Android) | Migrate face templates from Ver-ID 2.* to Ver-ID 3+ |
 | [**Serialization**](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Android) | Serialize types using protocol buffers |
 | [**Common types**](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Android) | Facilitate library interoperability |
 | [**Face classification**](https://github.com/AppliedRecognition/Face-Classification-Android) | Extract attributes from face, e.g. glasses, sunglasses, face covering | 
@@ -33,6 +34,7 @@ implementation("com.appliedrec:verid-face-capture")
 | **Face recognition ArcFace*** | `com.appliedrec:face-recognition-arcface-core`<br />`com.appliedrec:face-recognition-arcface-cloud` |
 | **Face recognition Dlib** (legacy) | `com.appliedrec:face-recognition-dlib` |
 | **Passport reader** | `com.appliedrec:mtrd-reader` |
+| **Ver-ID 2–3 migration** | `com.appliedrec:verid-2-3-migration` |
 | **Serialization** | `com.appliedrec:verid-serialization` |
 | **Common types** | `com.appliedrec:verid-common` |
 | **BOM** (bill of materials) | `com.appliedrec:verid-bom` |
