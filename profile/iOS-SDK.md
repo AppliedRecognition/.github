@@ -11,11 +11,12 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple),<br> [Face recognition Dlib](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) (legacy) |
 | **Face detection** | Detect faces in images | [Face detection RetinaFace](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple) |
 | **Spoof detection** | Detect spoofs in images | [Spoof device detection](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple),<br> [FASnet spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fasnet-Apple),<br> [Fusion spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fusion-Apple) |
+| **Facial attribute detection** | Detect attributes in faces | [Facial attribute detection](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Apple) |
 | **Ver-ID 2–3 migration** | Migrate face templates from Ver-ID 2.* to Ver-ID 3+ | [Ver-ID 2–3 migration](https://github.com/AppliedRecognition/Ver-ID-2-3-Migration-Apple) |
 | **Common types** | Facilitate library interoperability | [Common types](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple) |
 | **Serialization** | Serialize types using protocol buffers | [Serialization](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Apple) |
 
-The libraries are vendored using Swift Package Manager. To consume the libraries add their Git repo address to your project's Swift Package dependencies and select the desired version constraints.
+The libraries are vendored using Swift Package Manager. To consume the libraries add a Swift Package Collection with the URL `https://github.com/AppliedRecognition/Ver-ID-Swift-Package-Collection/raw/refs/heads/main/collection.json` in Xcode and select your required libraries.
 
 # Capturing a face
 
