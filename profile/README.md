@@ -42,4 +42,5 @@ Uses the following Ver-ID libraries:
 - Face detection RetinaFace: [iOS](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android)
 - Face recognition ArcFace: [iOS](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android)
 - Spoof device detection: [iOS](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple), [Android](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android)
+- Facial attribute detection: [iOS](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Apple), [Android](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Android)
 - MRTD reader: [Android](https://github.com/AppliedRecognition/Passport-Reader-Android)
