@@ -8,6 +8,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | [**Face template registry**](https://github.com/AppliedRecognition/Face-Template-Registry-Android) | Handles face registration, authentication and identification |
 | [**Face detection**](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android) | Detect faces in images |
 | [**Spoof device detection**](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android) | Detect spoof devices in images |
+| [**Face recognition R300**](https://github.com/AppliedRecognition/Face-Recognition-R300-Android) | Extract face templates from detected faces and compare them |
 | [**Face recognition ArcFace**](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android) | Extract face templates from detected faces and compare them |
 | [**Face recognition Dlib** (legacy)](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Android) |Extract face templates from detected faces and compare them |
 | [**Facial attribute detection**](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Android) | Detect eyewear and face covering | 
@@ -31,6 +32,7 @@ implementation("com.appliedrec:verid-face-capture")
 | **Face template registry** | `com.appliedrec:face-template-registry` |
 | **Face detection RetinaFace** | `com.appliedrec:face-detection-retinaface` |
 | **Spoof device detection*** | `com.appliedrec:spoof-device-detection-core`<br />`com.appliedrec:spoof-device-detection-cloud` |
+| **Face recognition R300** | `com.appliedred:face-recognition-r3000-core`<br/>`com.appliedred:face-recognition-r3000-cloud` |
 | **Face recognition ArcFace*** | `com.appliedrec:face-recognition-arcface-core`<br />`com.appliedrec:face-recognition-arcface-cloud` |
 | **Face recognition Dlib** (legacy) | `com.appliedrec:face-recognition-dlib` |
 | **Facial attribute detection** | `com.appliedrec:facial-attribute-detection`<br>`com.appliedrec:eyewear-detection`<br>`com.appliedrec:face-covering-detection` |
@@ -86,7 +88,7 @@ Face recognition works by comparing face templates. Face templates are extracted
 coroutineScope.launch(Dispatchers.Default) {
     try {
         // Create a face recognition instance
-        val template = FaceRecognitionArcFace(context).use { faceRecognition ->
+        val template = FaceRecognitionR300(context).use { faceRecognition ->
             // Extract a face template from the captured face and image
             faceRecognition.createFaceRecognitionTemplates(
                 listOf(capture.face), capture.image
@@ -104,7 +106,7 @@ coroutineScope.launch(Dispatchers.Default) {
 coroutineScope.launch(Dispatchers.Default) {
     try {
         // Create a face recognition instance
-        val score = FaceRecognitionArcFace(context).use { faceRecognition ->
+        val score = FaceRecognitionR300(context).use { faceRecognition ->
             // Compare templates
             faceRecognition.compareFaceRecognitionTemplates(
                 listOf(template1),
@@ -127,7 +129,7 @@ The registry library offers functions to register, authenticate and identify tag
 
 ```kotlin
 // Create face recognition instance
-FaceRecognitionArcFace(context).use { faceRecognition ->
+FaceRecognitionR300(context).use { faceRecognition ->
     // Example: convert your data type to TaggedFaceTemplate array
     val faceTemplates = taggedFaces.map { face in
         TaggedFaceTemplate(face.template, face.userName)
@@ -243,10 +245,10 @@ val faceTemplates1: List<TaggedFaceTemplate<FaceTemplateVersion24, FloatArray>>
 val registry1 = FaceTemplateRegistry(faceRecognition1, faceTemplates1)
 
 // Second face recognition instance
-val faceRecognition2: FaceRecognition3D
+val faceRecognition2: FaceRecognitionR300
     
 // Tagged face templates to populate the second registry
-val faceTemplates2: List<TaggedFaceTemplate<FaceTemplateVersion3D1, FloatArray>>
+val faceTemplates2: List<TaggedFaceTemplate<FaceTemplateVersionR300, FloatArray>>
 
 // Create second registry instance
 val registry2 = FaceTemplateRegistry(faceRecognition2, faceTemplates2)

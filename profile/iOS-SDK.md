@@ -8,7 +8,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | --- | --- | --- |
 | **Face capture** | Capture faces that can be used for face recognition | [Face capture](https://github.com/AppliedRecognition/Face-Capture-Apple) |
 | **Face template registry** | Handles face registration, authentication and identification | [Face template registry](https://github.com/AppliedRecognition/Face-Template-Registry-Apple) |
-| **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple),<br> [Face recognition Dlib](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) (legacy) |
+| **Face recognition** | Extract face templates from detected faces and compare them | [Face recognition R300](https://github.com/AppliedRecognition/Face-Recognition-R300-Apple),<br>[Face recognition ArcFace](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple),<br> [Face recognition Dlib](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Apple) (legacy) |
 | **Face detection** | Detect faces in images | [Face detection RetinaFace](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple) |
 | **Spoof detection** | Detect spoofs in images | [Spoof device detection](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple),<br> [FASnet spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fasnet-Apple),<br> [Fusion spoof detection](https://github.com/AppliedRecognition/Spoof-Detection-Fusion-Apple) |
 | **Facial attribute detection** | Detect attributes in faces | [Facial attribute detection](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Apple) |
@@ -64,7 +64,7 @@ Face recognition works by comparing face templates. Face templates are extracted
 Task(priority: .utility) {
     do {
         // Create a face recognition instance
-        let faceRecognition = FaceRecognitionArcFace(apiKey: apiKey, url: url)
+        let faceRecognition = FaceRecognitionR300(apiKey: apiKey, url: url)
         // Extract a face template from the captured face and image
         let template = try await faceRecognition
             .createFaceRecognitionTemplates(from: [capture.face], in: capture.image).first!
@@ -80,7 +80,7 @@ Task(priority: .utility) {
 Task(priority: .utility) {
     do {
         // Create a face recognition instance
-        let faceRecognition = FaceRecognitionArcFace(apiKey: apiKey, url: url)
+        let faceRecognition = FaceRecognitionR300(apiKey: apiKey, url: url)
         // Compare templates
         let score = try await faceRecognition
             .compareFaceRecognitionTemplates([template1], to: template2).first!
@@ -100,7 +100,7 @@ The registry library offers functions to register, authenticate and identify tag
 
 ```swift
 // Create face recognition instance
-let faceRecognition = FaceRecognitionArcFace(apiKey: apiKey, url: url)
+let faceRecognition = FaceRecognitionR300(apiKey: apiKey, url: url)
 // Example: convert your data type to TaggedFaceTemplate array
 let faceTemplates = taggedFaces.map { face in
     TaggedFaceTemplate(faceTemplate: face.template, identifier: face.userName)
@@ -198,10 +198,10 @@ The multi-registry can assist with migrating from one face recognition system to
 
 ```swift
 // First face recognition instance
-let faceRecognition1: FaceRecognitionArcFace
+let faceRecognition1: FaceRecognitionR300
     
 // Tagged face templates to populate the first registry
-let faceTemplates1: [TaggedFaceTemplate<V24, [Float]>>]
+let faceTemplates1: [TaggedFaceTemplate<R300, [Float]>>]
 
 // Create first registry instance
 let registry1 = FaceTemplateRegistry(
@@ -210,10 +210,10 @@ let registry1 = FaceTemplateRegistry(
 )
 
 // Second face recognition instance
-let faceRecognition2: FaceRecognition3D
+let faceRecognition2: FaceRecognitionArcFace
     
 // Tagged face templates to populate the second registry
-let faceTemplates2: [TaggedFaceTemplate<FaceTemplateVersion3D1, [Float]>]
+let faceTemplates2: [TaggedFaceTemplate<V24, [Float]>]
 
 // Create second registry instance
 let registry2 = FaceTemplateRegistry(
