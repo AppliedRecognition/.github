@@ -16,7 +16,7 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | **Common types** | Facilitate library interoperability | [Common types](https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple) |
 | **Serialization** | Serialize types using protocol buffers | [Serialization](https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Apple) |
 
-The libraries are vendored using Swift Package Manager. To consume the libraries add a Swift Package Collection with the URL `https://github.com/AppliedRecognition/Ver-ID-Swift-Package-Collection/raw/refs/heads/main/collection.json` in Xcode and select your required libraries.
+The libraries are vendored using Swift Package Manager. To consume the libraries add a Swift Package Collection with the URL `https://swiftpackageindex.com/AppliedRecognition/collection.json` in Xcode and select your required libraries.
 
 # Capturing a face
 

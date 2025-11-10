@@ -22,7 +22,7 @@ Uses the following Ver-ID libraries:
 
 - Face capture: [iOS](https://github.com/AppliedRecognition/Face-Capture-Apple), [Android](https://github.com/AppliedRecognition/Face-Capture-Android)
 - Face detection RetinaFace: [iOS](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android)
-- Face recognition ArcFace: [iOS](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android)
+- Face recognition R300: [iOS](https://github.com/AppliedRecognition/Face-Recognition-R300-Apple), [Android](https://github.com/AppliedRecognition/Face-Recognition-R300-Android)
 - Spoof device detection: [iOS](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple), [Android](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android)
 - Face template registry: [iOS](https://github.com/AppliedRecognition/Face-Template-Registry-Apple), [Android](https://github.com/AppliedRecognition/Face-Template-Registry-Android)
 
@@ -40,7 +40,7 @@ Uses the following Ver-ID libraries:
 
 - Face capture: [iOS](https://github.com/AppliedRecognition/Face-Capture-Apple), [Android](https://github.com/AppliedRecognition/Face-Capture-Android)
 - Face detection RetinaFace: [iOS](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android)
-- Face recognition ArcFace: [iOS](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple), [Android](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android)
+- Face recognition R300: [iOS](https://github.com/AppliedRecognition/Face-Recognition-R300-Apple), [Android](https://github.com/AppliedRecognition/Face-Recognition-R300-Android)
 - Spoof device detection: [iOS](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Apple), [Android](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android)
 - Facial attribute detection: [iOS](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Apple), [Android](https://github.com/AppliedRecognition/Facial-Attribute-Detection-Android)
 - MRTD reader: [Android](https://github.com/AppliedRecognition/Passport-Reader-Android)
