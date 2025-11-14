@@ -8,6 +8,8 @@ The Ver-ID SDK is a collection of libraries for face detection, face recognition
 | [**Face template registry**](https://github.com/AppliedRecognition/Face-Template-Registry-Android) | Handles face registration, authentication and identification |
 | [**Face detection**](https://github.com/AppliedRecognition/Face-Detection-RetinaFace-Android) | Detect faces in images |
 | [**Spoof device detection**](https://github.com/AppliedRecognition/Spoof-Device-Detection-Ver-ID-3-Android) | Detect spoof devices in images |
+| [**Spoof detection L500**](https://github.com/AppliedRecognition/Spoof-Detection-L500-Android) | Detect spoofs in images using L500 model |
+| [**Spoof detection L600**](https://github.com/AppliedRecognition/Spoof-Detection-L600-Android) | Detect spoofs in images using model fusion |
 | [**Face recognition R300**](https://github.com/AppliedRecognition/Face-Recognition-R300-Android) | Extract face templates from detected faces and compare them |
 | [**Face recognition ArcFace**](https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Android) | Extract face templates from detected faces and compare them |
 | [**Face recognition Dlib** (legacy)](https://github.com/AppliedRecognition/Face-Recognition-Dlib-Android) |Extract face templates from detected faces and compare them |
@@ -31,6 +33,8 @@ implementation("com.appliedrec:verid-face-capture")
 | **Face capture** | `com.appliedrec:verid-face-capture` |
 | **Face template registry** | `com.appliedrec:face-template-registry` |
 | **Face detection RetinaFace** | `com.appliedrec:face-detection-retinaface` |
+| **Spoof detection L500** | `com.appliedrec:spoof-detection-l500-core`<br />`com.appliedrec:spoof-detection-l500-cloud` |
+| **Spoof detection L600** | `com.appliedrec:spoof-detection-l600-cloud` |
 | **Spoof device detection*** | `com.appliedrec:spoof-device-detection-core`<br />`com.appliedrec:spoof-device-detection-cloud` |
 | **Face recognition R300** | `com.appliedred:face-recognition-r3000-core`<br/>`com.appliedred:face-recognition-r3000-cloud` |
 | **Face recognition ArcFace*** | `com.appliedrec:face-recognition-arcface-core`<br />`com.appliedrec:face-recognition-arcface-cloud` |
